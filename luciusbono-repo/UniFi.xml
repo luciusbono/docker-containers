@@ -4,7 +4,7 @@
   <Category>HomeAutomation: Network:Management</Category>
   <Name>UniFi</Name>
   <Description></Description>
-  <Registry>https://github.com/luciusbono/docker-containers</Registry>
+  <Registryhttps://hub.docker.com/r/luciusbono/unifi/</Registry>
   <Repository>luciusbono/unifi</Repository>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
