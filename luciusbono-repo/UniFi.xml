@@ -4,8 +4,8 @@
   <Category>HomeAutomation: Network:Management</Category>
   <Name>UniFi</Name>
   <Description></Description>
-  <Registry>https://hub.docker.com/u/luciusbono/unifi/</Registry>
-  <Repository>luciusbono/unifi</Repository>
+  <Registry>https://hub.docker.com/r/jacobalberty/unifi/</Registry>
+  <Repository>jacobalberty/unifi</Repository>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Environment/>
@@ -37,12 +37,27 @@
         <ContainerPort>8880</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
+      <Port>
+        <HostPort>3478</HostPort>
+        <ContainerPort>3478</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>      
     </Publish>
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/unifi/</HostDir>
+      <HostDir>/mnt/cache/appdata/unifi/config</HostDir>
       <ContainerDir>/var/lib/unifi</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/unifi/log</HostDir>
+      <ContainerDir>/var/log/unifi</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/unifi/run</HostDir>
+      <ContainerDir>/var/run/unifi</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
