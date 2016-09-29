@@ -11,38 +11,6 @@
   <Environment/>
   <Networking>
     <Mode>host</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8081</HostPort>
-        <ContainerPort>8081</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>8080</HostPort>
-        <ContainerPort>8080</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>8443</HostPort>
-        <ContainerPort>8443</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>8843</HostPort>
-        <ContainerPort>8843</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>8880</HostPort>
-        <ContainerPort>8880</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>3478</HostPort>
-        <ContainerPort>3478</ContainerPort>
-        <Protocol>udp</Protocol>
-      </Port>      
-    </Publish>
   </Networking>
   <Data>
     <Volume>
