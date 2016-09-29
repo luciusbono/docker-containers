@@ -46,17 +46,17 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/unifi/config</HostDir>
+      <HostDir>/mnt/user/appdata/unifi/config</HostDir>
       <ContainerDir>/var/lib/unifi</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/appdata/unifi/log</HostDir>
+      <HostDir>/mnt/user/appdata/unifi/log</HostDir>
       <ContainerDir>/var/log/unifi</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/appdata/unifi/run</HostDir>
+      <HostDir>/mnt/user/appdata/unifi/run</HostDir>
       <ContainerDir>/var/run/unifi</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
