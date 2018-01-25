@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>SyncLounge</Name>
-  <Repository>Starbix/docker-synclounge</Repository>
-  <Registry>https://hub.docker.com/r/rix1337/docker-synclounge-auto/</Registry>
+  <Repository>starbix/docker-synclounge</Repository>
+  <Registry>https://hub.docker.com/r/starbix/synclounge/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Privileged>false</Privileged>
