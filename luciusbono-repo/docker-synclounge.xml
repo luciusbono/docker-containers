@@ -39,7 +39,7 @@
       <Mode/>
     </Variable>
   </Environment>
-  <Config Name="slweb" Target="8888" Default="" Mode="tcp" Description="Container Port: 8088" Type="Port" Display="always" Required="false" Mask="false">8088</Config>
+  <Config Name="slweb" Target="8088" Default="" Mode="tcp" Description="Container Port: 8088" Type="Port" Display="always" Required="false" Mask="false">8888</Config>
   <Config Name="slserver" Target="8089" Default="" Mode="tcp" Description="Container Port: 8089" Type="Port" Display="always" Required="false" Mask="false">8089</Config>
   <Config Name="DOMAIN" Target="DOMAIN" Default="" Mode="" Description="Container Variable: DOMAIN" Type="Variable" Display="always" Required="false" Mask="false">ADD YOUR DOMAIN HERE</Config>
 </Container>
