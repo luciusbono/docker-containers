@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>SyncLounge</Name>
+  <Repository>Starbix/docker-synclounge</Repository>
+  <Registry>https://hub.docker.com/r/rix1337/docker-synclounge-auto/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Overview></Overview>
+  <Category></Category>
+  <WebUI>http://[IP]:[PORT:8888]/slweb/</WebUI>
+  <TemplateURL/>
+  <Icon>http://synclounge.tv/img/logo-small-light.png</Icon>
+  <ExtraParams></ExtraParams>
+  <PostArgs/>
+  <DateInstalled>1513598895</DateInstalled>
+  <Description></Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8888</HostPort>
+        <ContainerPort>8088</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8089</HostPort>
+        <ContainerPort>8089</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>ADD YOUR DOMAIN HERE</Value>
+      <Name>DOMAIN</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="slweb" Target="8888" Default="" Mode="tcp" Description="Container Port: 8088" Type="Port" Display="always" Required="false" Mask="false">8088</Config>
+  <Config Name="slserver" Target="8089" Default="" Mode="tcp" Description="Container Port: 8089" Type="Port" Display="always" Required="false" Mask="false">8089</Config>
+  <Config Name="DOMAIN" Target="DOMAIN" Default="" Mode="" Description="Container Variable: DOMAIN" Type="Variable" Display="always" Required="false" Mask="false">ADD YOUR DOMAIN HERE</Config>
+</Container>
