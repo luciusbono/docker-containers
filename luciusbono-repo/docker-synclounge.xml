@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>SyncLounge</Name>
-  <Repository>starbix/docker-synclounge</Repository>
+  <Repository>starbix/synclounge</Repository>
   <Registry>https://hub.docker.com/r/starbix/synclounge/</Registry>
   <Network>bridge</Network>
   <MyIP/>
